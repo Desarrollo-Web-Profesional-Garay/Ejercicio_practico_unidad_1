@@ -1,0 +1,39 @@
+.auth-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.85rem 2rem;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.auth-btn--login {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.35);
+}
+
+.auth-btn--login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.5);
+}
+
+.auth-btn--logout {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.35);
+}
+
+.auth-btn--logout:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(239, 68, 68, 0.5);
+}
+
+.auth-btn:active {
+    transform: translateY(0) scale(0.97);
+}
